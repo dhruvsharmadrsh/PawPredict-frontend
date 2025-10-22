@@ -280,7 +280,7 @@ const LoadingSpinner = () => (
           textShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
           animation: 'glow 2s ease-in-out infinite'
         }}>
-          PawPredict
+           Pawdentify
         </h1>
         <div style={{
           fontSize: '1rem',
@@ -289,7 +289,7 @@ const LoadingSpinner = () => (
           letterSpacing: '3px',
           animation: 'fadeIn 1s ease-out 0.5s both'
         }}>
-          BY DHRUV SHARMA
+          Infosys mobilenet v2
         </div>
       </div>
 
@@ -353,7 +353,7 @@ const LoadingSpinner = () => (
         fontWeight: '800',
         animation: 'slideInUp 0.8s ease-out 0.3s both'
       }}>
-        Loading PawPredict
+        Loading  Pawdentify
       </h2>
       
       {/* Animated dots */}
@@ -374,16 +374,7 @@ const LoadingSpinner = () => (
         ))}
       </div>
 
-      <p style={{ 
-        fontSize: '1.2rem', 
-        opacity: 0.9,
-        maxWidth: '600px',
-        lineHeight: '1.6',
-        animation: 'fadeIn 1s ease-out 0.6s both',
-        padding: '0 1rem'
-      }}>
-        Preparing your AI-powered breed identification experience
-      </p>
+ 
 
       {/* Progress bar */}
       <div style={{

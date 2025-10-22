@@ -4,34 +4,38 @@ import {
   Routes,
   Route,
   useLocation,
-  Navigate,
 } from 'react-router-dom';
 import {
   ClerkProvider,
   SignedIn,
   SignedOut,
   RedirectToSignIn,
+  useAuth,
 } from '@clerk/clerk-react';
+import { collection, query, where, getDocs, addDoc } from 'firebase/firestore';
+import { db } from './firebase'; 
 import styles from './App.module.css';
 import PredictionPage from './pages/PredictionPage';
 import HomePage from './pages/HomePage';
+import VaccinationTracker from './pages/VaccinationTracker';
 import AboutPage from './pages/AboutPage';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-
+import HelpPage from './pages/HelpPage';
 import BackgroundMusic from './components/BackgroundMusic';
-import CustomContextMenu from './components/CustomContextMenu';
 import BreedsPage from './pages/BreedsDirectoryPage';
 import BreedDetailPage from './pages/BreedDetailPage';
 import NotFoundPage from './pages/NotFoundPage';
-// Get Clerk Publishable Key from Create React App env
+import FloatingActionButtons from './components/FloatingActionButtons';
+import FeedbackPage from './pages/FeedbackPage';
+import PredictionHistoryPage from './pages/PredictionHistoryPage';
+
 const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
 if (!clerkPubKey) {
   throw new Error('Missing REACT_APP_CLERK_PUBLISHABLE_KEY in .env file');
 }
 
-// Protected Route Component
 const ProtectedRoute = ({ children }) => {
   return (
     <>
@@ -43,7 +47,6 @@ const ProtectedRoute = ({ children }) => {
   );
 };
 
-// Smooth Slide Transition
 const PageTransition = ({ children }) => {
   const location = useLocation();
   const [displayLocation, setDisplayLocation] = useState(location);
@@ -74,8 +77,7 @@ const PageTransition = ({ children }) => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/breeds" element={<BreedsPage />} />
           <Route path="/breeds/:breedName" element={<BreedDetailPage />} />
-
-          {/* Protected Routes */}
+          <Route path="/vaccinations" element={<VaccinationTracker />} />
           <Route
             path="/predict"
             element={
@@ -84,7 +86,31 @@ const PageTransition = ({ children }) => {
               </ProtectedRoute>
             }
           />
-
+          <Route
+            path="/history"
+            element={
+              <ProtectedRoute>
+                <PredictionHistoryPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/profile"
+            element={
+              <ProtectedRoute>
+              
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/feedback"
+            element={
+              <ProtectedRoute>
+                <FeedbackPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/help" element={<HelpPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </div>
@@ -94,15 +120,12 @@ const PageTransition = ({ children }) => {
           min-height: 100vh;
           position: relative;
         }
-
         .page-content.enter {
           animation: slideInFade 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
         }
-
         .page-content.exit {
           animation: slideOutFade 0.4s cubic-bezier(0.55, 0, 1, 0.45) forwards;
         }
-
         @keyframes slideInFade {
           from {
             opacity: 0;
@@ -113,7 +136,6 @@ const PageTransition = ({ children }) => {
             transform: translateX(0);
           }
         }
-
         @keyframes slideOutFade {
           from {
             opacity: 1;
@@ -124,62 +146,72 @@ const PageTransition = ({ children }) => {
             transform: translateX(-30px);
           }
         }
-
-        html {
-          scroll-behavior: smooth;
-        }
-
-        .page-content {
-          will-change: transform, opacity;
-          backface-visibility: hidden;
-        }
-
-        @media (max-width: 768px) {
-          .page-content.enter {
-            animation-duration: 0.4s;
-          }
-          .page-content.exit {
-            animation-duration: 0.3s;
-          }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-          .page-content.enter,
-          .page-content.exit {
-            animation: simpleFade 0.2s ease !important;
-          }
-          @keyframes simpleFade {
-            from { opacity: 0; }
-            to { opacity: 1; }
-          }
-          html {
-            scroll-behavior: auto !important;
-          }
-        }
       `}</style>
     </>
   );
 };
 
-// Main App Component
+// NEW: Component to handle user settings initialization
+const UserSettingsInitializer = () => {
+  const { userId, isSignedIn } = useAuth();
+
+  useEffect(() => {
+    const initializeUserSettings = async () => {
+      if (!isSignedIn || !userId) {
+        console.log('⏳ Waiting for user authentication...');
+        return;
+      }
+
+      try {
+        console.log('🔍 Checking user settings for:', userId);
+        
+        // Check if settings already exist
+        const q = query(
+          collection(db, 'userSettings'),
+          where('userId', '==', userId)
+        );
+        const snapshot = await getDocs(q);
+        
+        if (snapshot.empty) {
+          console.log('🆕 Creating new user settings...');
+          
+          // Create default settings for new user
+          await addDoc(collection(db, 'userSettings'), {
+            userId: userId,
+            historyEnabled: true,
+            updatedAt: new Date(),
+            createdAt: new Date()
+          });
+          
+          console.log('✅ User settings initialized successfully!');
+        } else {
+          console.log('✅ User settings already exist');
+        }
+      } catch (error) {
+        console.error('❌ Error initializing user settings:', error);
+      }
+    };
+
+    initializeUserSettings();
+  }, [isSignedIn, userId]);
+
+  return null; 
+};
+
 function App() {
   return (
     <ClerkProvider publishableKey={clerkPubKey}>
       <Router>
-        <CustomContextMenu />
-        <div className={styles.app}>
-          <Navbar />
-          <main>
-            <PageTransition />
-          </main>
-          <Footer />
-
-          <BackgroundMusic
-            src="/background-music.mp3"
-            volume={0.5}
-            autoStart={false}
-          />
-        </div>
+        <UserSettingsInitializer /> 
+        <Navbar />
+        <FloatingActionButtons />
+        <PageTransition />
+        <Footer />
+        <BackgroundMusic
+          src="/background-music.mp3"
+          volume={0.5}
+          autoStart={false}
+        />
       </Router>
     </ClerkProvider>
   );

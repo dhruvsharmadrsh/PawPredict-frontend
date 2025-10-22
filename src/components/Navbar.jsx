@@ -6,6 +6,7 @@ import {
   UserButton,
   SignInButton,
 } from '@clerk/clerk-react';
+import SimpleLanguageSwitcher from './SimpleLanguageSwitcher';
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -49,6 +50,7 @@ const Navbar = () => {
     { path: '/predict', label: 'Predict', icon: '🔮' },
     { path: '/breeds', label: 'Breeds', icon: '🐕' },
     { path: '/about', label: 'About', icon: 'ℹ️' },
+    { path: '/history', label: 'History', icon: '📜' }
   ];
 
   const handleNavigation = (path) => {
@@ -79,7 +81,7 @@ const Navbar = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
-                PawPredict
+                 Pawdentify
               </span>
               <span className="text-xs font-semibold tracking-widest text-gray-500 dark:text-gray-400">
                 Mind in Motion
@@ -113,6 +115,9 @@ const Navbar = () => {
 
           {/* Right Actions */}
           <div className="hidden md:flex items-center gap-4">
+            {/* ADD GOOGLE TRANSLATE WIDGET HERE */}
+            <SimpleLanguageSwitcher />
+
             <SignedOut>
               <SignInButton mode="modal">
                 <button className="px-6 py-2.5 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-600 shadow-md hover:shadow-lg hover:scale-[1.03] transition-all duration-300 dark:from-indigo-400 dark:to-purple-500">
@@ -182,6 +187,11 @@ const Navbar = () => {
           ))}
 
           <div className="pt-4 space-y-2 border-t border-gray-200 dark:border-gray-800">
+            {/* ADD GOOGLE TRANSLATE WIDGET FOR MOBILE */}
+            <div className="px-4 py-2">
+              <SimpleLanguageSwitcher />
+            </div>
+
             <SignedOut>
               <SignInButton mode="modal">
                 <button className="w-full px-4 py-3 rounded-xl font-semibold text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">

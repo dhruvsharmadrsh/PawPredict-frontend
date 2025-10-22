@@ -12,11 +12,13 @@ import {
   RefreshCw,
   HelpCircle,
   User, 
-  Lock, 
+  Lock,
+  Trash2,
+  Eye,
 } from 'lucide-react';
-
-// NOTE: We assume the user is authenticated because the component is wrapped in <ProtectedRoute> in App.jsx.
-// The primary focus here is performance and ensuring the component is ready for an authenticated context.
+import { collection, addDoc, getDocs, query, orderBy, limit, where, deleteDoc, doc } from "firebase/firestore";
+import { db } from "../firebase";
+import { useUser } from '@clerk/clerk-react';
 
 const TABS = ['overview', 'care', 'health', 'behavior', 'living', 'appearance'];
 
@@ -37,6 +39,9 @@ const GlassTag = ({ children, delay = 0 }) => (
 );
 
 const DogBreedPredictor = ({ isDarkMode = true }) => {
+  const { isSignedIn, user } = useUser();
+  const userId = user?.id || 'guest';
+  
   const [file, setFile] = useState(null);
   const [preview, setPreview] = useState(null);
   const [result, setResult] = useState(null);
@@ -45,26 +50,24 @@ const DogBreedPredictor = ({ isDarkMode = true }) => {
   const [dragging, setDragging] = useState(false);
   const [tab, setTab] = useState('overview');
   const [backendStatus, setBackendStatus] = useState('checking');
+  const [history, setHistory] = useState([]);
+  const [showHistory, setShowHistory] = useState(false);
+  const [historyEnabled, setHistoryEnabled] = useState(true);
+  const [deletingId, setDeletingId] = useState(null);
 
   const fileInput = useRef(null);
-  const containerRef = useRef(null); // Retained for a simple effect if needed
+  const containerRef = useRef(null);
 
   const API_URL = 'http://localhost:8000';
-  const CONFIDENCE_THRESHOLD = 60; // Set minimum confidence threshold
-  
-  const [isAuthenticated, setIsAuthenticated] = useState(true); 
+  const CONFIDENCE_THRESHOLD = 60;
 
   useEffect(() => {
     checkBackend();
     
-
-    // NOTE: In a real-world scenario with Clerk, you would check for user status here
-    // const { isSignedIn } = useAuth(); 
-    // setIsAuthenticated(isSignedIn);
-
-  }, []);
-  
-  // NOTE: Removed useEffect for tab/indicator updates
+    if (userId && userId !== 'guest') {
+      fetchHistorySettings();
+    }
+  }, [userId]);
 
   const checkBackend = async () => {
     try {
@@ -72,6 +75,87 @@ const DogBreedPredictor = ({ isDarkMode = true }) => {
       setBackendStatus(res.ok ? 'online' : 'offline');
     } catch {
       setBackendStatus('offline');
+    }
+  };
+
+  const fetchHistorySettings = async () => {
+    if (!userId || userId === 'guest') return;
+    
+    try {
+      const q = query(
+        collection(db, 'userSettings'),
+        where('userId', '==', userId),
+        limit(1)
+      );
+      const snapshot = await getDocs(q);
+      
+      if (!snapshot.empty) {
+        const settings = snapshot.docs[0].data();
+        setHistoryEnabled(settings.historyEnabled !== false);
+        console.log('✅ History settings loaded:', settings.historyEnabled);
+      } else {
+        console.log('📝 No settings found, using default (enabled)');
+      }
+    } catch (err) {
+      console.error('❌ Error fetching history settings:', err);
+    }
+  };
+
+  const fetchHistory = async () => {
+    if (!userId) {
+      console.log('⚠️ User not authenticated');
+      return;
+    }
+
+    try {
+      const q = query(
+        collection(db, "predictions"),
+        where('userId', '==', userId),
+        orderBy("timestamp", "desc"),
+        limit(10)
+      );
+      const querySnapshot = await getDocs(q);
+      const preds = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+      setHistory(preds);
+      setShowHistory(true);
+    } catch (err) {
+      console.error("Failed to fetch history:", err);
+    }
+  };
+
+  const viewHistoryResult = (historyItem) => {
+    setFile(null); 
+    
+    // Load Cloudinary URL into preview
+    setPreview(historyItem.imageURL || null);
+    
+    setResult({
+      prediction: historyItem.prediction,
+      breed_info: historyItem.breedInfo 
+    });
+
+    setShowHistory(false); 
+    setTab('overview');
+  };
+
+  const deleteHistoryItem = async (historyId, e) => {
+    e.stopPropagation(); // Prevent triggering viewHistoryResult
+    
+    if (!window.confirm('Are you sure you want to delete this prediction?')) {
+      return;
+    }
+
+    setDeletingId(historyId);
+    
+    try {
+      await deleteDoc(doc(db, "predictions", historyId));
+      setHistory(prev => prev.filter(item => item.id !== historyId));
+      console.log('✅ Prediction deleted successfully');
+    } catch (err) {
+      console.error('❌ Error deleting prediction:', err);
+      alert('Failed to delete prediction. Please try again.');
+    } finally {
+      setDeletingId(null);
     }
   };
 
@@ -102,34 +186,63 @@ const DogBreedPredictor = ({ isDarkMode = true }) => {
   };
 
   const predict = async () => {
-    if (!file) return;
-    if (!isAuthenticated) {
-        setError("You must be logged in to make a prediction.");
-        return;
+    if (!file) {
+      setError('Please upload an image first.');
+      return;
     }
-    
+
     setLoading(true);
     setError(null);
+    
+    let data;
     try {
       const formData = new FormData();
       formData.append('file', file);
-
+      formData.append('user_id', userId); // Send userId to backend for Cloudinary folder structure
       
       const res = await fetch(`${API_URL}/predict`, { 
         method: 'POST', 
         body: formData,
-        
       });
       
       if (!res.ok) {
         const errData = await res.json();
         throw new Error(errData.detail || errData.message || 'Prediction failed');
       }
-      const data = await res.json();
+      
+      data = await res.json();
+      
       setResult(data);
       setBackendStatus('online');
+      
+      // Save to Firestore if authenticated, history is enabled, and Cloudinary URL exists
+      if (isSignedIn && userId && userId !== 'guest' && historyEnabled && data.image_url) {
+        try {
+          await addDoc(collection(db, "predictions"), {
+            userId: userId,
+            timestamp: new Date(),
+            imageURL: data.image_url, // Cloudinary URL from backend
+            prediction: data.prediction,
+            breedInfo: data.breed_info
+          });
+          console.log("✅ Prediction and Cloudinary URL saved to Firestore");
+        } catch (firestoreErr) {
+          console.error("❌ Failed to save prediction:", firestoreErr);
+        }
+      } else {
+        if (!historyEnabled) {
+          console.log('📝 History tracking is disabled - prediction not saved');
+        }
+        if (!isSignedIn || userId === 'guest') {
+          console.log('🔒 User not authenticated - prediction not saved');
+        }
+        if (!data.image_url) {
+          console.log('⚠️ No Cloudinary URL received from backend');
+        }
+      }
+
     } catch (err) {
-      setError(err.message);
+      setError(err.message || 'Prediction API failed.');
     } finally {
       setLoading(false);
     }
@@ -530,8 +643,7 @@ const DogBreedPredictor = ({ isDarkMode = true }) => {
               ].map((item, i) => (
                 <div key={item.label} className="behavior-item-simple" style={{ animationDelay: `${i * 100}ms` }}>
                   <span className="text-sm text-white/70 font-semibold flex items-center gap-2">
-                    <span className="text-xl">{item.icon}</span>
-                    {item.label}
+                    <span className="text-xl">{item.icon}</span>{item.label}
                   </span>
                   <span className="text-sm font-bold text-white">{item.value}</span>
                 </div>
@@ -559,7 +671,8 @@ const DogBreedPredictor = ({ isDarkMode = true }) => {
               Grooming Schedule
             </h3>
             <div className="space-y-3">
-              {[{ label: 'Professional Grooming', value: info.professional_grooming_frequency, icon: '💈' },
+              {[
+                { label: 'Professional Grooming', value: info.professional_grooming_frequency, icon: '💈' },
                 { label: 'Brushing', value: info.brushing_frequency, icon: '🪮' },
                 { label: 'Bathing', value: info.bathing_frequency, icon: '🛁' },
                 { label: 'Nail Trimming', value: info.nail_trimming_frequency, icon: '💅' }
@@ -683,7 +796,34 @@ const DogBreedPredictor = ({ isDarkMode = true }) => {
           transform: translateX(4px);
         }
         
-        // Remove complex animations for better performance
+        .history-item-card {
+          position: relative;
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 16px;
+          padding: 16px;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          animation: fade-in 0.5s ease-out backwards;
+        }
+        
+        .history-item-card:hover {
+          background: rgba(255, 255, 255, 0.1);
+          border-color: rgba(139, 92, 246, 0.5);
+          transform: translateY(-2px);
+          box-shadow: 0 8px 24px rgba(139, 92, 246, 0.2);
+        }
+        
+        .delete-btn {
+          opacity: 0;
+          transition: all 0.3s ease;
+        }
+        
+        .history-item-card:hover .delete-btn {
+          opacity: 1;
+        }
+        
         @keyframes pulse-simple { 0%, 100% { opacity: 0.8; } 50% { opacity: 1; } }
       `}</style>
       <div className="absolute inset-0 opacity-10 pointer-events-none" 
@@ -704,9 +844,9 @@ const DogBreedPredictor = ({ isDarkMode = true }) => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black text-white mb-4 tracking-tighter leading-none">
-           Paw{' '}
+            Paw{' '}
             <span className="relative inline-block">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Predict</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">dentify</span>
             </span>
           </h1>
           <p className="text-white/80 text-lg font-medium">Because Every Dog Deserves to Be Recognized</p>
@@ -716,13 +856,13 @@ const DogBreedPredictor = ({ isDarkMode = true }) => {
         {!result ? (
           <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl shadow-2xl p-8 animate-fade-in">
             {/* Login Required Notice */}
-            {!isAuthenticated && (
-                <div className="mb-6 bg-red-500/10 backdrop-blur-xl border-2 border-red-500/50 rounded-2xl p-5 text-red-200 flex items-center gap-4">
-                    <Lock className="w-7 h-7 flex-shrink-0" />
-                    <span className="font-semibold text-lg">
-                        Login Required: Please sign in to use the predictor.
-                    </span>
-                </div>
+            {!isSignedIn && (
+              <div className="mb-6 bg-red-500/10 backdrop-blur-xl border-2 border-red-500/50 rounded-2xl p-5 text-red-200 flex items-center gap-4">
+                <Lock className="w-7 h-7 flex-shrink-0" />
+                <span className="font-semibold text-lg">
+                  Login Required: Please sign in to use the predictor.
+                </span>
+              </div>
             )}
             
             <div
@@ -730,7 +870,7 @@ const DogBreedPredictor = ({ isDarkMode = true }) => {
               onDragOver={(e) => { e.preventDefault(); setDragging(true); }}
               onDragLeave={() => setDragging(false)}
               onDrop={handleDrop}
-              onClick={() => !loading && isAuthenticated && fileInput.current?.click()}
+              onClick={() => !loading && isSignedIn && fileInput.current?.click()}
             >
               <input ref={fileInput} type="file" accept="image/*" onChange={(e) => handleFile(e.target.files[0])} className="hidden" />
 
@@ -767,7 +907,7 @@ const DogBreedPredictor = ({ isDarkMode = true }) => {
               </div>
             )}
 
-            {file && !loading && isAuthenticated && (
+            {file && !loading && isSignedIn && (
               <button onClick={predict} disabled={backendStatus === 'offline'}
                 className="w-full mt-8 relative group/btn overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed animate-fade-in">
                 <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-xl blur opacity-30 group-hover/btn:opacity-60 transition duration-300"></div>
@@ -777,12 +917,119 @@ const DogBreedPredictor = ({ isDarkMode = true }) => {
                 </div>
               </button>
             )}
-            
-            {file && !isAuthenticated && (
-                <div className="w-full mt-8 relative bg-gray-500/30 text-white font-black py-4 rounded-xl text-xl flex items-center justify-center gap-3 opacity-60 cursor-not-allowed">
-                    <Lock className="w-6 h-6" />
-                    Please Log In to Predict
+
+            {/* View History Button */}
+            {isSignedIn && (
+              <div className="flex justify-center mt-6 animate-fade-in">
+                <button
+                  onClick={fetchHistory}
+                  className="px-6 py-3 rounded-xl font-bold text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 flex items-center gap-2 shadow-lg"
+                >
+                  <RefreshCw className="w-5 h-5" />
+                  View Prediction History
+                </button>
+              </div>
+            )}
+
+            {/* Enhanced Display Recent Predictions */}
+            {showHistory && (
+              <div className="mt-8 max-w-4xl mx-auto backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 animate-fade-in">
+                <div className="flex items-center justify-between mb-6">
+                  <h3 className="text-white font-bold text-2xl flex items-center gap-2">
+                    <RefreshCw className="w-6 h-6 text-purple-400" />
+                    Recent Predictions
+                  </h3>
+                  <button 
+                    onClick={() => setShowHistory(false)}
+                    className="text-white/60 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-lg"
+                  >
+                    <X className="w-5 h-5" />
+                  </button>
                 </div>
+                
+                {history.length === 0 ? (
+                  <div className="text-center py-12">
+                    <div className="text-6xl mb-4">🐕</div>
+                    <p className="text-white/70 text-lg">No previous predictions found.</p>
+                    <p className="text-white/50 text-sm mt-2">Start by uploading your first dog image!</p>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {history.map((h, idx) => (
+                      <div
+                        key={h.id}
+                        className="history-item-card"
+                        style={{ animationDelay: `${idx * 100}ms` }}
+                      >
+                        <div className="flex gap-4">
+                          {/* Thumbnail */}
+                          {h.imageURL && (
+                            <div className="flex-shrink-0">
+                              <img 
+                                src={h.imageURL} 
+                                alt={h.prediction.breed}
+                                className="w-24 h-24 rounded-lg object-cover border-2 border-white/10"
+                              />
+                            </div>
+                          )}
+                          
+                          {/* Content */}
+                          <div className="flex-1 min-w-0" onClick={() => viewHistoryResult(h)}>
+                            <div className="flex items-start justify-between gap-2 mb-2">
+                              <h4 className="text-white font-bold text-lg truncate">
+                                {h.prediction.breed}
+                              </h4>
+                              <span className="flex-shrink-0 text-xs bg-green-500/20 text-green-300 px-2 py-1 rounded-full font-bold border border-green-500/30">
+                                {h.prediction.percentage}%
+                              </span>
+                            </div>
+                            
+                            <p className="text-white/60 text-sm mb-3">
+                              {new Date(h.timestamp.seconds * 1000).toLocaleString('en-US', {
+                                month: 'short',
+                                day: 'numeric',
+                                year: 'numeric',
+                                hour: '2-digit',
+                                minute: '2-digit'
+                              })}
+                            </p>
+                            
+                            <div className="flex items-center gap-2">
+                              <button
+                                onClick={() => viewHistoryResult(h)}
+                                className="flex items-center gap-1 text-purple-300 hover:text-purple-200 text-sm font-semibold transition-colors"
+                              >
+                                <Eye className="w-4 h-4" />
+                                View Details
+                              </button>
+                            </div>
+                          </div>
+                          
+                          {/* Delete Button */}
+                          <button
+                            onClick={(e) => deleteHistoryItem(h.id, e)}
+                            disabled={deletingId === h.id}
+                            className="delete-btn flex-shrink-0 p-2 bg-red-500/20 hover:bg-red-500/40 text-red-300 rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                          >
+                            {deletingId === h.id ? (
+                              <Loader2 className="w-4 h-4 animate-spin" />
+                            ) : (
+                              <Trash2 className="w-4 h-4" />
+                            )}
+                          </button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+            
+            {file && !isSignedIn && (
+              <div className="w-full mt-8 relative bg-gray-500/30 text-white font-black py-4 rounded-xl text-xl flex items-center justify-center gap-3 opacity-60 cursor-not-allowed">
+                <Lock className="w-6 h-6" />
+                Please Log In to Predict
+              </div>
             )}
 
             {loading && (
@@ -871,11 +1118,6 @@ const DogBreedPredictor = ({ isDarkMode = true }) => {
                 {TABS.map((t, idx) => {
                   const isActive = tab === t;
                   const tabIcons = { overview: '📊', care: '💚', health: '🏥', behavior: '🐾', living: '🏡', appearance: '🎨' };
-                  const colors = {
-                    overview: 'from-cyan-400 to-indigo-600', care: 'from-emerald-400 to-teal-600',
-                    health: 'from-rose-400 to-red-600', behavior: 'from-violet-400 to-indigo-600',
-                    living: 'from-amber-400 to-orange-600', appearance: 'from-fuchsia-400 to-purple-600'
-                  };
                   
                   return (
                     <button

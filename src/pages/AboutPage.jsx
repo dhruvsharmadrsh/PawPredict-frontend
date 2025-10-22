@@ -435,7 +435,7 @@ const AboutPage = () => {
                 animation: 'gradientMove 3s ease infinite',
               }}
             >
-              PawPredict
+               Pawdentify
             </span>
           </h1>
 

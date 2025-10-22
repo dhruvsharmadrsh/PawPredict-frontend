@@ -1,7 +1,5 @@
 export const breedsData = {
-
-
-  "Afghan Hound": {
+  "afghan-hound": {
     "size": "Large",
     "weight_range": "50-60 lbs",
     "height_range": "24-27 inches",
@@ -115,9 +113,9 @@ export const breedsData = {
       "Not suitable for first-time owners"
     ],
     "cost_range": "Purchase: $1,500-3,000; Monthly care: $150-300",
-    "img_url": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400"
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Afghan_dog_-_cropped.jpg/250px-Afghan_dog_-_cropped.jpg"
   },
-  "African Hunting Dog": {
+  "african-hunting-dog": {
     "size": "Large",
     "weight_range": "40-80 lbs",
     "height_range": "24-30 inches",
@@ -221,9 +219,9 @@ export const breedsData = {
       "Requires specialized wildlife care"
     ],
     "cost_range": "Not applicable - wild animal",
-    "img_url": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400"
+    "img_url": "https://www.nationalgeographic.com/content/dam/expeditions/get-inspired/an-inside-look/leaders-of-the-pack-african-wild-dogs/wild-dog.jpg"
   },
-  "Airedale Terrier": {
+  "airedale-terrier": {
     "size": "Large",
     "weight_range": "45-65 lbs",
     "height_range": "22-24 inches",
@@ -329,9 +327,9 @@ export const breedsData = {
       "Regular grooming needed"
     ],
     "cost_range": "Purchase: $800-2,000; Monthly care: $100-200",
-    "img_url": "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400"
+    "img_url": "https://th.bing.com/th/id/OIP.KBqtGtO1Nxcd5ok7lOBmUwHaE8?w=259&h=180&c=7&r=0&o=7&cb=12&dpr=1.4&pid=1.7&rm=3"
   },
-  "American Staffordshire Terrier": {
+  "american-staffordshire-terrier": {
     "size": "Medium",
     "weight_range": "40-70 lbs",
     "height_range": "17-19 inches",
@@ -445,9 +443,9 @@ export const breedsData = {
       "Early socialization crucial"
     ],
     "cost_range": "Purchase: $1,200-3,000; Monthly care: $80-150",
-    "img_url": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400"
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/AMERICAN_STAFFORDSHIRE_TERRIER%2C_Zican%E2%80%99s_Bz_Ez_Dragon_%2824208348891%29.2.jpg"
   },
-  "Appenzeller": {
+  "appenzeller": {
     "size": "Medium",
     "weight_range": "48-70 lbs",
     "height_range": "20-22 inches",
@@ -554,9 +552,9 @@ export const breedsData = {
       "Strong herding instincts"
     ],
     "cost_range": "Purchase: $1,500-2,500; Monthly care: $120-200",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": "https://uk.bellfor.info/image/catalog/Blog/Blog-Pictures/Appenzeller_Sennenhund_Hundefutter/AppenzellerSennenhund.jpg"
   },
-  "Australian Terrier": {
+  "australian-terrier": {
     "size": "Small",
     "weight_range": "15-20 lbs",
     "height_range": "10-11 inches",
@@ -665,9 +663,9 @@ export const breedsData = {
       "Apartment suitable"
     ],
     "cost_range": "Purchase: $800-1,500; Monthly care: $60-120",
-    "img_url": "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=400"
+    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Australian-Terrier-standing-in-the-garden.jpg"
   },
-  "Bedlington Terrier": {
+  "bedlington-terrier": {
     "size": "Medium",
     "weight_range": "17-23 lbs",
     "height_range": "15-17.5 inches",
@@ -779,9 +777,9 @@ export const breedsData = {
       "Hypoallergenic coat"
     ],
     "cost_range": "Purchase: $1,000-2,000; Monthly care: $100-180",
-    "img_url": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400"
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Boutchie_apres_championnat_004.JPG/1200px-Boutchie_apres_championnat_004.JPG"
   },
-  "Bernese Mountain Dog": {
+  "bernese-mountain-dog": {
     "size": "Large",
     "weight_range": "70-115 lbs",
     "height_range": "23-27.5 inches",
@@ -888,9 +886,9 @@ export const breedsData = {
       "Prone to health issues"
     ],
     "cost_range": "Purchase: $1,500-3,000; Monthly care: $150-300",
-    "img_url": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400"
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Bernese_Mountain_Dog_-_9_months.JPG/250px-Bernese_Mountain_Dog_-_9_months.JPG"
   },
-  "Blenheim Spaniel": {
+  "blenheim-spaniel": {
     "size": "Small",
     "weight_range": "12-18 lbs",
     "height_range": "12-13 inches",
@@ -1001,9 +999,9 @@ export const breedsData = {
       "Gentle nature"
     ],
     "cost_range": "Purchase: $1,000-2,500; Monthly care: $80-150",
-    "img_url": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400"
+    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Cavalier-King-Charles-Spaniel-standing-in-the-grass.jpg"
   },
-  "Border Collie": {
+  "border-collie": {
     "size": "Medium",
     "weight_range": "30-55 lbs",
     "height_range": "18-22 inches",
@@ -1117,9 +1115,9 @@ export const breedsData = {
       "Not suitable for apartments"
     ],
     "cost_range": "Purchase: $800-2,000; Monthly care: $100-180",
-    "img_url": "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400"
+    "img_url": "https://images.ctfassets.net/sfnkq8lmu5d7/3e9YUdwYZ6xFEG07HtPNeu/2173e34d441fa6583d86345975c99a32/2025-08-06_How_smart_are_Boarder_Collies_really_-_Hero.jpg?w=1000&h=750&fl=progressive&q=70&fm=jpg"
   },
-  "Border Terrier": {
+  "border-terrier": {
     "size": "Small",
     "weight_range": "11.5-15.5 lbs",
     "height_range": "12-15 inches",
@@ -1228,9 +1226,9 @@ export const breedsData = {
       "Moderate grooming needs"
     ],
     "cost_range": "Purchase: $800-1,500; Monthly care: $60-120",
-    "img_url": "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=400"
+    "img_url": "https://www.thesprucepets.com/thmb/XcxPAjlxNOoA5OSfkS0asVvivzA=/3832x0/filters:no_upscale():strip_icc()/BorderTerrierGettyImages-531551140CaptureLight-25a9cfa1a0b94bb68ea1848f84fe181c.jpg"
   },
-  "Boston Bull": {
+  "boston-bull": {
     "size": "Small",
     "weight_range": "10-25 lbs",
     "height_range": "9-15 inches",
@@ -1338,9 +1336,9 @@ export const breedsData = {
       "Low grooming needs"
     ],
     "cost_range": "Purchase: $1,000-2,500; Monthly care: $70-130",
-    "img_url": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400"
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Boston_Terrier_male.jpg/250px-Boston_Terrier_male.jpg"
   },
-  "Bouvier des Flandres": {
+  "bouvier-des-flandres": {
     "size": "Large",
     "weight_range": "70-110 lbs",
     "height_range": "23.5-27.5 inches",
@@ -1452,9 +1450,9 @@ export const breedsData = {
       "Large size requirements"
     ],
     "cost_range": "Purchase: $1,500-2,500; Monthly care: $150-250",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Bouvier-des-Flandres-standing-atop-a-hill.jpg"
   },
-  "Brabancon Griffon": {
+  "brabancon-griffon": {
     "size": "Small",
     "weight_range": "8-10 lbs",
     "height_range": "9-11 inches",
@@ -1564,9 +1562,9 @@ export const breedsData = {
       "Bonds closely to one person"
     ],
     "cost_range": "Purchase: $800-1,500; Monthly care: $60-120",
-    "img_url": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400"
+    "img_url": "https://d128mjo55rz53e.cloudfront.net/media/images/brabancon-1.max-500x500.format-jpeg.jpg"
   },
-  "Brittany Spaniel": {
+  "brittany-spaniel": {
     "size": "Medium",
     "weight_range": "30-40 lbs",
     "height_range": "17-20 inches",
@@ -1679,9 +1677,9 @@ export const breedsData = {
       "Not suitable for apartments"
     ],
     "cost_range": "Purchase: $800-1,500; Monthly care: $100-180",
-    "img_url": "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400"
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/American_Brittany_standing.jpg/1200px-American_Brittany_standing.jpg"
   },
-  "Cardigan": {
+  "cardigan": {
     "size": "Medium",
     "weight_range": "25-38 lbs",
     "height_range": "10.5-12.5 inches",
@@ -1793,9 +1791,9 @@ export const breedsData = {
       "Heavy shedding"
     ],
     "cost_range": "Purchase: $1,000-2,000; Monthly care: $80-150",
-    "img_url": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400"
+    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Cardigan-Welsh-Corgi-on-White-111.jpg"
   },
-  "Chesapeake Bay Retriever": {
+  "chesapeake-bay-retriever": {
     "size": "Large",
     "weight_range": "55-80 lbs",
     "height_range": "21-26 inches",
@@ -1910,9 +1908,9 @@ export const breedsData = {
       "Heavy shedding"
     ],
     "cost_range": "Purchase: $1,200-2,500; Monthly care: $120-200",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Chesapeake-Bay-Retriever-MP.jpg"
   },
-  "Chihuahua": {
+  "chihuahua": {
     "size": "Small",
     "weight_range": "2-6 lbs",
     "height_range": "5-8 inches",
@@ -2030,9 +2028,9 @@ export const breedsData = {
       "Strong personality"
     ],
     "cost_range": "Purchase: $500-1,500; Monthly care: $50-100",
-    "img_url": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400"
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Chihuahua1_bvdb.jpg"
   },
-  "Dandie Dinmont": {
+  "dandie-dinmont": {
     "size": "Small",
     "weight_range": "18-24 lbs",
     "height_range": "8-11 inches",
@@ -2139,9 +2137,9 @@ export const breedsData = {
       "Good apartment dog"
     ],
     "cost_range": "Purchase: $1,200-2,000; Monthly care: $80-140",
-    "img_url": "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=400"
+    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Dandie-Dinmont-Terrier-slide-6.jpg"
   },
-  "Doberman": {
+  "doberman": {
     "size": "Large",
     "weight_range": "60-100 lbs",
     "height_range": "24-28 inches",
@@ -2254,9 +2252,9 @@ export const breedsData = {
       "Potential breed restrictions"
     ],
     "cost_range": "Purchase: $1,500-3,000; Monthly care: $150-250",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": "https://tse1.mm.bing.net/th/id/OIP.Gze2l2FlfyQu4a9Yz8URIAHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
-  "English Foxhound": {
+  "english-foxhound": {
     "size": "Large",
     "weight_range": "60-75 lbs",
     "height_range": "21-25 inches",
@@ -2369,9 +2367,9 @@ export const breedsData = {
       "Needs pack companionship"
     ],
     "cost_range": "Purchase: $800-1,500; Monthly care: $100-180",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": "https://www.thesprucepets.com/thmb/8g2kjd0C5gyLC1jLMj0HIa0tYyk=/3008x0/filters:no_upscale():strip_icc()/GettyImages-93607391-ff031ae6911a4e9c94c1528371a1f3b1.jpg"
   },
-  "English Setter": {
+  "english-setter": {
     "size": "Large",
     "weight_range": "45-80 lbs",
     "height_range": "23-27 inches",
@@ -2483,9 +2481,9 @@ export const breedsData = {
       "Gentle nature"
     ],
     "cost_range": "Purchase: $800-2,000; Monthly care: $120-200",
-    "img_url": "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400"
+    "img_url": "https://tse4.mm.bing.net/th/id/OIP.m3ZLmMszOD2Xs3nDBzA_tQAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
-  "English Springer": {
+  "english-springer": {
     "size": "Medium",
     "weight_range": "40-50 lbs",
     "height_range": "19-20 inches",
@@ -2597,9 +2595,9 @@ export const breedsData = {
       "Excellent family dog"
     ],
     "cost_range": "Purchase: $800-1,800; Monthly care: $100-180",
-    "img_url": "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400"
+    "img_url": "https://tse2.mm.bing.net/th/id/OIP.davnhC3JrTWhPqz9oTQIOAHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
-  "EntleBucher": {
+  "entlebucher": {
     "size": "Medium",
     "weight_range": "40-65 lbs",
     "height_range": "16-21 inches",
@@ -2708,9 +2706,9 @@ export const breedsData = {
       "Not apartment suitable"
     ],
     "cost_range": "Purchase: $1,200-2,500; Monthly care: $120-200",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": "https://tse1.explicit.bing.net/th/id/OIP.rAWm4DVdObuKmUjorphLSQHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
-  "Eskimo Dog": {
+  "eskimo-dog": {
     "size": "Large",
     "weight_range": "60-95 lbs",
     "height_range": "20-28 inches",
@@ -2822,9 +2820,9 @@ export const breedsData = {
       "Independent nature"
     ],
     "cost_range": "Purchase: $1,000-3,000; Monthly care: $120-200",
-    "img_url": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400"
+    "img_url": "https://tse4.mm.bing.net/th/id/OIP.O8zS-qcWE-rjnuhUtA8ZpwHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
-  "Norwich Terrier": {
+  "norwich-terrier": {
     "size": "Small",
     "weight_range": "10-14 lbs",
     "height_range": "9-10 inches",
@@ -2934,9 +2932,9 @@ export const breedsData = {
       "Apartment suitable"
     ],
     "cost_range": "Purchase: $800-2,000; Monthly care: $70-130",
-    "img_url": "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=400"
+    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Norwich-Terrier-standing-outdoors.jpg"
   },
-  "Old English Sheepdog": {
+  "old-english-sheepdog": {
     "size": "Large",
     "weight_range": "60-100 lbs",
     "height_range": "21-24 inches",
@@ -3048,9 +3046,9 @@ export const breedsData = {
       "Professional grooming costs"
     ],
     "cost_range": "Purchase: $1,200-2,500; Monthly care: $200-400",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Old-English-Sheepdogs-on-white-02.jpg"
   },
-  "Pekinese": {
+  "pekinese": {
     "size": "Small",
     "weight_range": "7-14 lbs",
     "height_range": "6-9 inches",
@@ -3165,9 +3163,9 @@ export const breedsData = {
       "Strong personality"
     ],
     "cost_range": "Purchase: $750-2,500; Monthly care: $80-150",
-    "img_url": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400"
+    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Pekingese-standing-in-the-grass.jpg"
   },
-  "Pembroke": {
+  "pembroke": {
     "size": "Medium",
     "weight_range": "22-30 lbs",
     "height_range": "10-12 inches",
@@ -3279,9 +3277,9 @@ export const breedsData = {
       "Royal association"
     ],
     "cost_range": "Purchase: $1,200-3,000; Monthly care: $80-150",
-    "img_url": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400"
+    "img_url": " https://imgs.search.brave.com/2U6vTOlJCw2NNZBnYu9V69ePmWOr-21BVwk5dyFrgYU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9kb2ct/Z3JheS1iYWNrZ3Jv/dW5kLXN0dWRpby1z/aG9vdGluZy13ZWxz/aC1jb3JnaS1wZW1i/cm9rZS1icmVlZC1w/aG90b2dyYXBoZWQt/NzY4MTYyODMuanBn "
   },
-  "Pomeranian": {
+  "pomeranian": {
     "size": "Small",
     "weight_range": "3-7 lbs",
     "height_range": "6-7 inches",
@@ -3399,9 +3397,9 @@ export const breedsData = {
       "Small dog syndrome"
     ],
     "cost_range": "Purchase: $500-4,000; Monthly care: $50-120",
-    "img_url": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400"
+    "img_url": " https://imgs.search.brave.com/RuGB2KVboBjsbloKGVbOuLPIfe8I6QPagWlYrWW9Bkk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZG9nc3Rlci5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTgv/MDUvcG9ydHJhaXQt/b2YtcG9tZXJhbmlh/bi1kb2ctc3RhbmRp/bmdfU3ViZXJ0VF9T/aHV0dGVyc3RvY2su/anBn "
   },
-  "Rhodesian Ridgeback": {
+  "rhodesian-ridgeback": {
     "size": "Large",
     "weight_range": "70-85 lbs",
     "height_range": "24-27 inches",
@@ -3512,9 +3510,9 @@ export const breedsData = {
       "Potential escape artist"
     ],
     "cost_range": "Purchase: $1,200-3,000; Monthly care: $120-200",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": " https://imgs.search.brave.com/cMH-vsaRxz7EH21xIbsH99lV2LoyUoM87pOSBPNPrns/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9teXdv/b2YuY29tL2Nkbi9z/aG9wL2ZpbGVzL2Rv/Zy1icmVlZC1wcm9m/aWxlLXJob2Rlc2lh/bi1yaWRnZWJhY2tf/NjEzMzE0OTIzNzcx/NDE0MjIxMF8yMDI1/MDEyMS5qcGc "
   },
-  "Rottweiler": {
+  "rottweiler": {
     "size": "Large",
     "weight_range": "80-135 lbs",
     "height_range": "22-27 inches",
@@ -3625,9 +3623,9 @@ export const breedsData = {
       "Strong protective instincts"
     ],
     "cost_range": "Purchase: $1,200-3,000; Monthly care: $150-300",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": " https://imgs.search.brave.com/L8FILIP9bsxKYAELeC8-k-KtnaCZ-3uYcVmDNOKOXOU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMS8x/MC8xNC8xNy81OC9k/b2ctNjcxMDAxOF82/NDAuanBn "
   },
-  "Saint Bernard": {
+  "saint-bernard": {
     "size": "Giant",
     "weight_range": "120-180 lbs",
     "height_range": "26-30 inches",
@@ -3738,9 +3736,9 @@ export const breedsData = {
       "Drooling"
     ],
     "cost_range": "Purchase: $1,500-3,000; Monthly care: $200-400",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": " https://imgs.search.brave.com/3nK04sYjfxLGF6JGcLguCz3PoONTHgvdgCznMvjRuE4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/YnJpdGFubmljYS5j/b20vNjYvMjM1NjY2/LTAwNC04NjYxOTA0/Mi9TYWludC1iZXJu/YXJkLWRvZy1zdC1i/ZXJuYXJkLXN0YW5k/aW5nLXNub3cuanBn "
   },
-  "Saluki": {
+  "saluki": {
     "size": "Large",
     "weight_range": "40-65 lbs",
     "height_range": "23-28 inches",
@@ -3854,9 +3852,9 @@ export const breedsData = {
       "Sensitive nature"
     ],
     "cost_range": "Purchase: $2,500-5,000; Monthly care: $100-180",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": " https://imgs.search.brave.com/SPyuWjOyAAtMB22pt5iijn-oJ3kiBhM4-GydUg-hsRI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA2Lzc4LzM2Lzcx/LzM2MF9GXzY3ODM2/NzE4Nl9YUnFmZG1a/cm55NEZYb0JqSmxN/bWhtN09GdDNTVURZ/Qy5qcGc "
   },
-  "Samoyed": {
+  "samoyed": {
     "size": "Large",
     "weight_range": "35-65 lbs",
     "height_range": "19-23.5 inches",
@@ -3968,9 +3966,9 @@ export const breedsData = {
       "Very vocal"
     ],
     "cost_range": "Purchase: $1,200-3,000; Monthly care: $150-300",
-    "img_url": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400"
+    "img_url": " https://imgs.search.brave.com/xT9JQ3yutBS4LPdAa1JNFlsaroYUxKSjjvAOMwsQUA0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/dGhlc3BydWNlcGV0/cy5jb20vdGhtYi83/ZFFCTWhBbmJwMnhh/Mm1OSUxybnYyamVU/MU09LzE1MDB4MC9m/aWx0ZXJzOm5vX3Vw/c2NhbGUoKTpzdHJp/cF9pY2MoKS9zYW1v/eWVkLWRvZy1icmVl/ZC1wcm9maWxlLTQ1/ODYyNzAtaGVyby00/NjA3MWU5ZDdhMWI0/NjUzODY2ODhiYzk4/ODM3ZjAwZC5qcGVn "
   },
-  "Scotch Terrier": {
+  "scotch-terrier": {
     "size": "Small",
     "weight_range": "18-22 lbs",
     "height_range": "10 inches",
@@ -4080,9 +4078,9 @@ export const breedsData = {
       "Strong personality"
     ],
     "cost_range": "Purchase: $800-2,000; Monthly care: $80-150",
-    "img_url": "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=400"
+    "img_url": "https://th.bing.com/th/id/OIP.nHtAIfFZLlSZvCJtNI8-sAHaE8?w=292&h=195&c=7&r=0&o=7&cb=12&dpr=1.4&pid=1.7&rm=3"
   },
-  "Scottish Deerhound": {
+  "scottish-deerhound": {
     "size": "Giant",
     "weight_range": "75-110 lbs",
     "height_range": "28-32 inches",
@@ -4196,9 +4194,9 @@ export const breedsData = {
       "Short lifespan"
     ],
     "cost_range": "Purchase: $1,500-2,500; Monthly care: $150-250",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": " https://imgs.search.brave.com/44MK-t6SfpWKYGkj3qCGLMIo_dWoQ4r5N25OE-MhvBU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZG9ncGFja2FwcC5j/b20vYmxvZy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNS8wMi9z/Y290dGlzaC1kZWVy/aG91bmQtb24taGls/bC53ZWJw "
   },
-  "Sealyham Terrier": {
+  "sealyham-terrier": {
     "size": "Small",
     "weight_range": "20-24 lbs",
     "height_range": "10.5 inches",
@@ -4309,9 +4307,9 @@ export const breedsData = {
       "Good family dog"
     ],
     "cost_range": "Purchase: $800-1,800; Monthly care: $80-150",
-    "img_url": "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=400"
+    "img_url": " https://imgs.search.brave.com/m62kncyKMl4XKFwWADV5CSrrY6MNYDPUE7x-5l23jYI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9zZWFs/eWhhbS10ZXJyaWVy/LXNlYWx5aGFtLXRl/cnJpZXItZG9nLWFk/dWx0LXN0YW5kaW5n/LWdyYXNzLTE3MDcz/ODYwNS5qcGc "
   },
-  "Shetland Sheepdog": {
+  "shetland-sheepdog": {
     "size": "Small",
     "weight_range": "15-25 lbs",
     "height_range": "13-16 inches",
@@ -4425,9 +4423,9 @@ export const breedsData = {
       "High exercise needs"
     ],
     "cost_range": "Purchase: $800-2,000; Monthly care: $100-180",
-    "img_url": "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400"
+    "img_url": " https://imgs.search.brave.com/BxJxr9WSgTi3kbVBmP7OU4hjvAqY4rLBRWsT8-yxyR4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucHVwcHlmaW5k/ZXIuY29tL0JyZWVk/LzkvMy9mLzkzZjhk/YmIxNmMzYTgyNjZf/U2hldGxhbmRTaGVl/cGRvZzRfbWVkaXVt/LmpwZw "
   },
-  "Shih Tzu": {
+  "shih-tzu": {
     "size": "Small",
     "weight_range": "9-16 lbs",
     "height_range": "9-10.5 inches",
@@ -4543,9 +4541,9 @@ export const breedsData = {
       "Heat sensitivity"
     ],
     "cost_range": "Purchase: $500-1,800; Monthly care: $100-200",
-    "img_url": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400"
+    "img_url": " https://imgs.search.brave.com/GqTnwhBgH1Xrxec1wZ0S3eGRMmlPYyC7oJ_d1XIw6kU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE1/MzQ2MTE2My9waG90/by9zaGloLXR6dS1i/cmVlZC1kb2cuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUhn/cWtEY2ZRWHlQUkFs/d1Bxb1NtUDBZQmxx/YnB4WWswU1pQc2hl/cW9XVzg9 "
   },
-  "Siberian Husky": {
+  "siberian-husky": {
     "size": "Medium",
     "weight_range": "35-60 lbs",
     "height_range": "20-23.5 inches",
@@ -4660,9 +4658,9 @@ export const breedsData = {
       "Needs pack companionship"
     ],
     "cost_range": "Purchase: $600-2,000; Monthly care: $100-180",
-    "img_url": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400"
+    "img_url": " https://imgs.search.brave.com/iBr7sWAtmbTZvYzKT9Az6yhqFaImshP3akS4Tp_5_vw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaGFwcHlwZXQu/Y2FyZS9pbWFnZXMv/MjA4ODUvc2liZXJp/YW4taHVza3ktd2Fs/a2luZy53ZWJw "
   },
-  "Staffordshire Bullterrier": {
+  "staffordshire-bullterrier": {
     "size": "Medium",
     "weight_range": "24-38 lbs",
     "height_range": "14-16 inches",
@@ -4778,9 +4776,9 @@ export const breedsData = {
       "Excellent family dog"
     ],
     "cost_range": "Purchase: $800-2,000; Monthly care: $80-150",
-    "img_url": "https://images.unsplash.com/photo-1605568427561-40dd23c2acea?w=400"
+    "img_url": " https://imgs.search.brave.com/ictddYsCcqlDmpR0U1o4YwgT7RxZNUBLYt6i1KWdqqo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4t/aW1hZ2VzLnZldHN0/cmVldC5jb20vNjYv/MDFlNWMwYTgwODEx/ZTBhMGQ1MDA1MDU2/OGQ2MzRmL2ZpbGUv/U3RhZmZvcmRzaGly/ZS1CdWxsLVRlcnJp/ZXItNC02NDVtazA2/MjgxMS5qcGc "
   },
-  "Sussex Spaniel": {
+  "sussex-spaniel": {
     "size": "Medium",
     "weight_range": "35-45 lbs",
     "height_range": "13-15 inches",
@@ -4891,9 +4889,9 @@ export const breedsData = {
       "Good family dog"
     ],
     "cost_range": "Purchase: $800-2,500; Monthly care: $100-180",
-    "img_url": "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400"
+    "img_url": " https://imgs.search.brave.com/fbAxwgybO7eW5h4cvtAbdxhiCKvdNoWmSRzMpkJ5Qcs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zaG93/c2lnaHRtYWdhemlu/ZS5jb20vd3AtY29u/dGVudC91cGxvYWRz/LzIwMjQvMDUvU3Vz/c2V4LVNwYW5pZWwt/NS5qcGc "
   },
-  "Tibetan Mastiff": {
+  "tibetan-mastiff": {
     "size": "Giant",
     "weight_range": "70-150 lbs",
     "height_range": "24-29 inches",
@@ -5006,9 +5004,9 @@ export const breedsData = {
       "Independent nature"
     ],
     "cost_range": "Purchase: $2,000-10,000+; Monthly care: $200-400",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": " https://imgs.search.brave.com/gb05W2iJuMelh0eP59PKKH9i14yUx7UKzWEJ0sAbQ6w/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQx/NDA2NjA5MC9waG90/by90aWJldGFuLW1h/c3RpZmYuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPWdUOHQ4/cG9DSm5nOHRGZXc1/bEtLMEZqQ1NtS0VQ/RHFFSTNwUzFNSEtH/ZzQ9 "
   },
-  "Tibetan Terrier": {
+  "tibetan-terrier": {
     "size": "Medium",
     "weight_range": "18-30 lbs",
     "height_range": "14-17 inches",
@@ -5122,9 +5120,9 @@ export const breedsData = {
       "Long lifespan commitment"
     ],
     "cost_range": "Purchase: $1,200-2,500; Monthly care: $100-200",
-    "img_url": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400"
+    "img_url": " https://imgs.search.brave.com/yUBjxAq4cWy4xbUx3pGDAuuehHviqwIEIDcUqOqsCKM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aWJl/dGFuZG9nY2hldy5j/b20vY2RuL3Nob3Av/ZmlsZXMvdGliZXRh/bl90ZXJyaWVycy5q/cGc_dj0xNzA5MTk1/MDI5 "
   },
-  "Walker Hound": {
+  "walker-hound": {
     "size": "Large",
     "weight_range": "45-80 lbs",
     "height_range": "20-27 inches",
@@ -5235,9 +5233,9 @@ export const breedsData = {
       "Escape artist tendencies"
     ],
     "cost_range": "Purchase: $400-800; Monthly care: $80-150",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": "https://www.shutterstock.com/image-photo/treeing-walker-coonhound-dog-outdoors-260nw-1201158751.jpg"
   },
-  "Weimaraner": {
+  "weimaraner": {
     "size": "Large",
     "weight_range": "55-90 lbs",
     "height_range": "23-27 inches",
@@ -5347,9 +5345,9 @@ export const breedsData = {
       "Requires experienced owner"
     ],
     "cost_range": "Purchase: $700-2,000; Monthly care: $120-200",
-    "img_url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400"
+    "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSXspGxv1ALYq5bGBCsn4_tV8NA60pARWlg&s"
   },
-  "Welsh Springer Spaniel": {
+  "welsh-springer-spaniel": {
     "size": "Medium",
     "weight_range": "35-55 lbs",
     "height_range": "17-19 inches",
@@ -5460,9 +5458,9 @@ export const breedsData = {
       "Moderate grooming needs"
     ],
     "cost_range": "Purchase: $800-2,000; Monthly care: $100-180",
-    "img_url": "https://images.unsplash.com/photo-1551717743-49959800b1f6?w=400"
+    "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPX46qnFAwOrCt_sElL9NXNAAxJ7oCcgDZ3g&s"
   },
-  "West Highland White Terrier": {
+  "west-highland-white-terrier": {
     "size": "Small",
     "weight_range": "15-20 lbs",
     "height_range": "10-11 inches",
@@ -5570,9 +5568,9 @@ export const breedsData = {
       "Regular professional grooming costs"
     ],
     "cost_range": "Purchase: $800-2,500; Monthly care: $80-160",
-    "img_url": "https://images.unsplash.com/photo-1583512603805-3cc6b41f3edb?w=400"
+    "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStcdRbxIKFcGxbHfEgsIobDWoRri56f4AlEg&s"
   },
-  "French_bulldog": {
+  "french-bulldog": {
     "size": "Small",
     "weight_range": "Under 28 lbs",
     "height_range": "11-13 inches",
@@ -5682,9 +5680,9 @@ export const breedsData = {
       "Star",
       "Lola"
     ],
-    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/French-Bulldog-standing-outdoors.jpg"
+    "img_url": "https://pawleaks.com/wp-content/uploads/2021/11/fawn-french-bulldog-640x433.jpg"
   },
-  "German_shepherd": {
+  "german-shepherd": {
     "size": "Large",
     "weight_range": "50-90 lbs (female 50-70, male 65-90)",
     "height_range": "22-26 inches (female 22-24, male 24-26)",
@@ -5792,9 +5790,9 @@ export const breedsData = {
       "Colonel",
       "Faithful"
     ],
-    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/German-Shepherd-on-White-00.jpg"
+    "img_url": "https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg"
   },
-  "German_short-haired_pointer": {
+  "german-short-haired-pointer": {
     "size": "Medium to Large",
     "weight_range": "45-70 lbs (males 55-70, females lighter)",
     "height_range": "23-25 inches (male), 21-23 inches (female)",
@@ -5902,9 +5900,9 @@ export const breedsData = {
       "Snow",
       "Summer"
     ],
-    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/German-Shorthaired-Pointer-on-point-1.jpg"
+    "img_url": "https://th.bing.com/th/id/R.44930e709687a224a5e155abd25ef7bc?rik=qt6F8hscCKPwDw&riu=http%3a%2f%2fspockthedog.com%2fwp-content%2fuploads%2f2016%2f02%2fGerman-Shorthaired-Pointer.jpg&ehk=x4QfL4CulN6QuRrNK7oSZYxIeoipuF2N5RGt0jNJys0%3d&risl=&pid=ImgRaw&r=0"
   },
-  "Gordon_setter": {
+  "gordon-setter": {
     "size": "Large",
     "weight_range": "45-80 lbs (female 45-70, male 55-80)",
     "height_range": "23-27 inches (female 23-26, male 24-27)",
@@ -6006,9 +6004,9 @@ export const breedsData = {
       "Evangeline",
       "Cordelia"
     ],
-    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Gordon-Setter-On-White-01.jpg"
+    "img_url": "https://tse1.mm.bing.net/th/id/OIP.uJlEQrKG3fd8ZTWh-F0I2QHaE6?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
-  "Great_Dane": {
+  "great-dane": {
     "size": "Giant",
     "weight_range": "110-175+ lbs",
     "height_range": "28-32 inches (minimum: males 30, females 28)",
@@ -6116,9 +6114,9 @@ export const breedsData = {
       "Brutus",
       "Crown"
     ],
-    "img_url": "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/07141952/Great-Dane-standing-in-profile-outdoors1.jpg"
+    "img_url": "https://image.petmd.com/files/inline-images/great-dane-5.jpg?VersionId=s_HKryETYVtUvss_RChuH3Aen3phEShs"
   },
-  "Great_Pyrenees": {
+  "great-pyrenees": {
     "size": "Large to Giant",
     "weight_range": "85-115+ lbs",
     "height_range": "25-32 inches (female 25-29, male 27-32)",
@@ -6215,9 +6213,9 @@ export const breedsData = {
       "Queen",
       "Victor"
     ],
-    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Great-Pyrenees-walking-on-the-beach.jpg"
+    "img_url": "https://tse3.mm.bing.net/th/id/OIP.NTmBducMQoog-ykQ_4nvdgHaE8?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
-  "Greater_Swiss_Mountain_dog": {
+  "greater-swiss-mountain-dog": {
     "size": "Large to Giant",
     "weight_range": "85-140 lbs",
     "height_range": "23.5-28.5 inches (female 23.5-27, male 25.5-28.5)",
@@ -6312,9 +6310,9 @@ export const breedsData = {
       "Sovereign",
       "Warrior"
     ],
-    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Greater-Swiss-Mountain-Dog-On-White-01.jpg"
+    "img_url": "https://images.ctfassets.net/aynow2efrlx4/2TPyMOJoqiqaexET83EbKp/a520229166b42c396bc50852794fad07/Greater-Swiss-Mountain-Dog-2.jpg?w=1000&h=1000"
   },
-  "Ibizan_hound": {
+  "ibizan-hound": {
     "size": "Medium",
     "weight_range": "45-50 lbs",
     "height_range": "22.5-27.5 inches (female 22.5-26, male 23.5-27.5)",
@@ -6409,9 +6407,9 @@ export const breedsData = {
       "Thunder",
       "Forest"
     ],
-    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Ibizan-Hound-sitting-in-profile-in-the-desert.jpg"
+    "img_url": "https://th.bing.com/th/id/OIP.cqZRnczxMKqS1MoXo1ZWCgHaFP?o=7&cb=12rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
-  "Irish_setter": {
+  "irish-setter": {
     "size": "Large",
     "weight_range": "55-70 lbs",
     "height_range": "24-27 inches",
@@ -6503,9 +6501,9 @@ export const breedsData = {
       "Evangeline",
       "Cordelia"
     ],
-    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Irish-Setter.3.jpg"
+    "img_url": "https://tse1.mm.bing.net/th/id/OIP.WLDDSxvS8Xv4BVdTIDgHOQHaEc?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
-  "Irish_terrier": {
+  "irish-terrier": {
     "size": "Medium",
     "weight_range": "25-27 lbs",
     "height_range": "18 inches (approx.)",
@@ -6602,9 +6600,9 @@ export const breedsData = {
       "Wiggles",
       "Aurora"
     ],
-    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Irish-Terrier-on-white-01.jpg"
+    "img_url": "https://th.bing.com/th/id/R.a37a76c6cc59c24923163e55ccd8a0cd?rik=Bmht3r%2bPVGy6ww&riu=http%3a%2f%2fanimalsbreeds.com%2fwp-content%2fuploads%2f2014%2f07%2fIrish-Terrier-2.jpg&ehk=i2lpf1ghO38BlqMR137SksGk%2bejnEMzXkVKUX3WTXd8%3d&risl=&pid=ImgRaw&r=0"
   },
-  "Irish_water_spaniel": {
+  "irish-water-spaniel": {
     "size": "Medium to Large",
     "weight_range": "45-68 lbs",
     "height_range": "21-24 inches",
@@ -6706,7 +6704,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Irish-Water-Spaniel-On-White-01.jpg"
   },
-  "Irish_wolfhound": {
+  "irish-wolfhound": {
     "size": "Giant",
     "weight_range": "105-180 lbs",
     "height_range": "30-32+ inches (female minimum 30, male minimum 32)",
@@ -6814,7 +6812,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Irish-Wolfhound-standing-in-a-field.jpg"
   },
-  "Italian_greyhound": {
+  "italian-greyhound": {
     "size": "Small",
     "weight_range": "7-14 lbs",
     "height_range": "13-15 inches",
@@ -6915,7 +6913,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Italian-Greyhound-standing-in-three-quarter-view.jpg"
   },
-  "Japanese_spaniel": {
+  "japanese-spaniel": {
     "size": "Toy",
     "weight_range": "7-11 lbs",
     "height_range": "8-11 inches",
@@ -7019,7 +7017,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Japanese-Chin-on-White-02.jpg.jpg"
   },
-  "Kerry_blue_terrier": {
+  "kerry-blue-terrier": {
     "size": "Medium",
     "weight_range": "33-40 lbs (male), slightly less for females",
     "height_range": "18-19.5 inches (male), 17.5-19 inches (female)",
@@ -7120,7 +7118,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Kerry-Blue-Terrier-standing-stacked-outdoors.jpg"
   },
-  "Labrador_retriever": {
+  "labrador-retriever": {
     "size": "Large",
     "weight_range": "55-80 lbs (female 55-70, male 65-80)",
     "height_range": "21.5-24.5 inches",
@@ -7226,7 +7224,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Labrador-Retriever-On-White-01.jpg"
   },
-  "Lakeland_terrier": {
+  "lakeland-terrier": {
     "size": "Small to Medium",
     "weight_range": "17 lbs (approx.)",
     "height_range": "14-15 inches",
@@ -7332,7 +7330,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Lakeland-Terrier-standing-stacked-outdoors.jpg"
   },
-  "Leonberg": {
+  "leonberg": {
     "size": "Giant",
     "weight_range": "90-170 lbs (female 90-140, male 110-170)",
     "height_range": "25.5-31.5 inches (female 25.5-29.5, male 28-31.5)",
@@ -7435,7 +7433,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Leonberger-standing-outdoors-in-profile.jpg"
   },
-  "Lhasa": {
+  "lhasa": {
     "size": "Small",
     "weight_range": "12-18 lbs",
     "height_range": "10-11 inches",
@@ -7534,7 +7532,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Lhasa-Apso-On-White-01.jpg"
   },
-  "Maltese_dog": {
+  "maltese-dog": {
     "size": "Toy",
     "weight_range": "Under 7 lbs (preferred 4-6)",
     "height_range": "7-9 inches",
@@ -7637,7 +7635,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Maltese-standing-in-three-quarter-view-on-a-white-background.jpg"
   },
-  "Mexican_hairless": {
+  "mexican-hairless": {
     "size": "Toy, Miniature, Standard",
     "weight_range": "10-55 lbs (varies by size)",
     "height_range": "10-14 in (Toy), 14-18 in (Miniature), 18-23 in (Standard)",
@@ -7740,7 +7738,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Xoloitzcuintli-On-White-01.jpg"
   },
-  "Newfoundland": {
+  "newfoundland": {
     "size": "Giant",
     "weight_range": "100-150 lbs (female 100-120, male 130-150)",
     "height_range": "26-28 inches (female 26, male 28)",
@@ -7845,7 +7843,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Newfoundland-standing-outdoors.jpg"
   },
-  "Norfolk_terrier": {
+  "norfolk-terrier": {
     "size": "Small",
     "weight_range": "11-12 lbs",
     "height_range": "9-10 inches",
@@ -7946,7 +7944,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Norfolk-Terrier-in-a-scent-work-trial.jpg"
   },
-  "Norwegian_elkhound": {
+  "norwegian-elkhound": {
     "size": "Medium",
     "weight_range": "48-55 lbs (approx.)",
     "height_range": "19.5-20.5 inches",
@@ -8047,7 +8045,7 @@ export const breedsData = {
     ],
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Norwegian-Elkhound-at-the-National-Championship.jpg"
   },
-  "Dachshund": {
+  "dachshund": {
     "size": "Small",
     "weight_range": "Mini: ≤11 lbs; Standard: 16–32 lbs",
     "height_range": "8–9 inches (standard); 5–6 inches (mini)",
@@ -8129,7 +8127,7 @@ export const breedsData = {
     "cost_range": "Purchase: $800–2,500; Monthly care: $70–150",
     "img_url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=800&q=80"
   },
-  "Beagle": {
+  "beagle": {
     "size": "Small to Medium",
     "weight_range": "Under 20 lbs (13-inch) or 20-30 lbs (15-inch)",
     "height_range": "Under 13 inches or 13-15 inches",
@@ -8233,9 +8231,9 @@ export const breedsData = {
       "High risk of obesity if not managed carefully"
     ],
     "cost_range": "Purchase: $800-$1500, Monthly: $100-$200",
-    "img_url": "URL_to_image_of_Beagle.jpg"
+    "img_url": "https://www.bil-jac.com/wp-content/uploads/2024/12/beagle2-184102750.webp"
   },
-  "Poodle": {
+  "poodle": {
     "size": "Toy/Miniature/Standard",
     "weight_range": "Toy: 4–6 lbs; Mini: 10–15 lbs; Standard: 40–70 lbs",
     "height_range": "Toy ≤10 in; Mini >10–15 in; Standard >15 in",
@@ -8319,7 +8317,7 @@ export const breedsData = {
     "cost_range": "Purchase: $1,000–3,500; Monthly care: $100–250",
     "img_url": "https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=800&q=80"
   },
-  "Bulldog": {
+  "bulldog": {
     "size": "Medium",
     "weight_range": "50 lbs (male); 40 lbs (female)",
     "height_range": "14–15 inches",
@@ -8397,9 +8395,9 @@ export const breedsData = {
       "Low exercise tolerance"
     ],
     "cost_range": "Purchase: $1,500–4,000; Monthly care: $120–300",
-    "img_url": "https://images.unsplash.com/photo-1548199973-7d9ed2b3fd37?w=800&q=80"
+    "img_url": "https://tse1.explicit.bing.net/th/id/OIP.m0TCxcKKN3AGAx9SrUsIGwHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
-  "Golden Retriever": {
+  "golden-retriever": {
     "size": "Medium to Large",
     "weight_range": "55-75 lbs (25-34 kg)",
     "height_range": "21.5-24 in (55-61 cm)",
@@ -8503,9 +8501,9 @@ export const breedsData = {
     ],
     "adoption_considerations": "Exercise requirements, cancer predisposition, grooming cost",
     "cost_range": "Moderate to High",
-    "img_url": ""
+    "img_url": "https://tse1.mm.bing.net/th/id/OIP.ay_vlnx-F7rhjhXLe-1lQQHaE6?pid=Api&P=0&h=180"
   },
-  "Boxer": {
+  "boxer": {
     "size": "Large",
     "weight_range": "55-75 lbs",
     "height_range": "21.5-25 inches",
@@ -8611,9 +8609,9 @@ export const breedsData = {
       "Remains puppy-like and boisterous for several years"
     ],
     "cost_range": "Purchase: $1000-$2500, Monthly: $150-$250",
-    "img_url": "URL_to_image_of_Boxer.jpg"
+    "img_url": "https://www.dogster.com/wp-content/uploads/2024/02/brindle-boxer-dog-standing-outdoor_volofin_Shutterstock.jpg"
   },
-  "Keeshond": {
+  "keeshond": {
     "size": "Medium",
     "weight_range": "35-45 lbs",
     "height_range": "16-19 inches",
@@ -8722,9 +8720,9 @@ export const breedsData = {
       "Thrives in cooler climates"
     ],
     "cost_range": "Purchase: $1,200-2,500; Monthly care: $100-200",
-    "img_url": "https://imgs.search.brave.com/ewfAwI93NUJmLu0buYkTDaz9EhtEi4p3uYg20wmqUsM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy8z/LzMwL0tlZXNob25k/X2JlZWNoLmpwZw"
+    "img_url": "https://tse1.mm.bing.net/th/id/OIP.3KPjHdVsw17V0fcOxb1nLgHaE8?pid=Api&P=0&h=180"
   },
-  "Australian Kelpie": {
+  "australian-kelpie": {
     "size": "Medium",
     "weight_range": "25-45 lbs",
     "height_range": "17-20 inches",
@@ -8834,9 +8832,9 @@ export const breedsData = {
       "Strong herding instincts may not suit small children or pets"
     ],
     "cost_range": "Purchase: $800-2,000; Monthly care: $100-250",
-    "img_url": "https://imgs.search.brave.com/KdW3k2FTKJzrz8iW3SpY5r2hjEbEOusLeAhXugEo0OQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNy8x/Mi8wMi8xMi8wNy9y/ZWQtY2xvdWQtMjk5/Mjc4MF82NDAuanBn"
+    "img_url": "https://tse2.mm.bing.net/th/id/OIP.zg4Sy5ReeMKQN-FpyYQ77AHaHD?pid=Api&P=0&h=180"
   },
-  "Komondor": {
+  "komondor": {
     "size": "Large",
     "weight_range": "80-130 lbs",
     "height_range": "25.5-31.5 inches",
@@ -8941,9 +8939,9 @@ export const breedsData = {
       "Protective instincts can cause dominance issues"
     ],
     "cost_range": "Purchase: $1,200-2,500; Monthly care: $150-300",
-    "img_url": "https://imgs.search.brave.com/4h7UvwwzG321s5kcuOJf4kataYw2RkeOZlfeUOcx0HE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hLXot/YW5pbWFscy5jb20v/bWVkaWEvMjAyNS8w/OS9zaHV0dGVyc3Rv/Y2stMjM0MDgzNzEw/NS1odWdlLWxpY2Vu/c2VkLXNjYWxlZC0x/MDI0eDY4MS5qcGc"
+    "img_url": "https://www.dailypaws.com/thmb/NOwAoiT825UPRCkrIeebfjS0RFU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/komondor-profile-in-park-245608627-2000-70404ce447a6430fa3ecbe81d8e1da0c.jpg"
   },
-  "Kuvasz": {
+  "kuvasz": {
     "size": "Large",
     "weight_range": "70-115 lbs",
     "height_range": "26-30 inches",
@@ -9047,9 +9045,9 @@ export const breedsData = {
       "Not suitable for urban living"
     ],
     "cost_range": "Purchase: $1,200-2,500; Monthly care: $120-250",
-    "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/7f2e5c51-5b2a-5686-ab4b-b43191b26b51/dd7f1630-3ced-5752-a206-58dfeba60936.jpg"
+    "img_url": "https://tse3.mm.bing.net/th/id/OIP.EY-ujHyIvpFaMpZwSJJfMgHaE8?pid=Api&P=0&h=180"
   },
-  "Alaskan Malamute": {
+  "alaskan-malamute": {
     "size": "Large",
     "weight_range": "75-100+ lbs",
     "height_range": "23-25 inches (females) to 25 inches (males), sometimes larger",
@@ -9160,9 +9158,9 @@ export const breedsData = {
       "Strong-willed and needs consistent training"
     ],
     "cost_range": "Purchase: $1,000-2,500; Monthly care: $150-300",
-    "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/8ce394b4-e832-5c26-9a70-054c7a3b1f14/e91e73d4-022b-59db-9713-717a2a198855.jpg"
+    "img_url": "https://tse3.mm.bing.net/th/id/OIP.cPUshvApgI1oN9nVvc5UbQHaGA?pid=Api&P=0&h=180"
   },
-  "Belgian Malinois": {
+  "belgian-malinois": {
     "size": "Medium to Large",
     "weight_range": "40-80 lbs",
     "height_range": "22-26 inches",
@@ -9269,9 +9267,9 @@ export const breedsData = {
       "Not recommended for first-time dog owners or sedentary households"
     ],
     "cost_range": "Purchase: $1,500-3,000; Monthly care: $150-300",
-    "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/65c5f34b-dcdf-5639-bfde-13c7032b2430/2a20e721-11ce-5071-bd98-b2ee778c9cff.jpg"
+    "img_url": "https://tse1.mm.bing.net/th/id/OIP.3bgKHC0CtPSvOsNqHsUusAHaE8?pid=Api&P=0&h=180"
   },
-  "Miniature Pinscher": {
+  "miniature-pinscher": {
     "size": "Small",
     "weight_range": "8-11 lbs",
     "height_range": "10-12.5 inches",
@@ -9384,7 +9382,7 @@ export const breedsData = {
     "cost_range": "Purchase: $600-1,200; Monthly care: $50-150",
     "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/e08f34ce-9d6a-59d1-ae9a-26889433f35d/e91e73d4-022b-59db-9713-717a2a198855.jpg"
   },
-  "Miniature Poodle": {
+  "miniature-poodle": {
     "size": "Small",
     "weight_range": "10-15 lbs",
     "height_range": "10-15 inches",
@@ -9503,7 +9501,7 @@ export const breedsData = {
     "cost_range": "Purchase: $1,000-2,500; Monthly care: $100-250",
     "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/a02d3161-e874-5561-80fd-e47518ea0629/e4f46b38-1d16-59d9-87b1-7fc60393b3fb.jpg"
   },
-  "Miniature Schnauzer": {
+  "miniature-schnauzer": {
     "size": "Small",
     "weight_range": "11-20 lbs",
     "height_range": "12-14 inches",
@@ -9617,7 +9615,7 @@ export const breedsData = {
     "cost_range": "Purchase: $800-1,500; Monthly care: $80-200",
     "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/fc8d5b44-8305-5758-8785-9ed3dd028ddb/a17e967a-f0a8-59bf-b9e6-92cc36ad280c.jpg"
   },
-  "Otterhound": {
+  "otterhound": {
     "size": "Large",
     "weight_range": "80-115 lbs",
     "height_range": "24-27 inches",
@@ -9735,7 +9733,7 @@ export const breedsData = {
     "cost_range": "Purchase: $1,200-2,500; Monthly care: $150-300",
     "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/03db6665-a29c-5235-a682-b8e5cf0dc11f/dd7f1630-3ced-5752-a206-58dfeba60936.jpg"
   },
-  "Papillon": {
+  "papillon": {
     "size": "Small",
     "weight_range": "4-10 lbs",
     "height_range": "8-11 inches",
@@ -9851,7 +9849,7 @@ export const breedsData = {
     "cost_range": "Purchase: $1,000-2,500; Monthly care: $80-180",
     "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/c051bb20-b996-542b-85f4-12655b4f345b/dd7f1630-3ced-5752-a206-58dfeba60936.jpg"
   },
-  "Pug": {
+  "pug": {
     "size": "Small",
     "weight_range": "14-18 lbs",
     "height_range": "10-13 inches",
@@ -9961,7 +9959,7 @@ export const breedsData = {
     "cost_range": "Purchase: $800-2,000; Monthly care: $100-250",
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Pug-puppy-standing-in-profile-on-a-white-background.jpg"
   },
-  "Redbone Coonhound": {
+  "redbone-coonhound": {
     "size": "Medium to Large",
     "weight_range": "45-70 lbs",
     "height_range": "21-27 inches",
@@ -10069,7 +10067,7 @@ export const breedsData = {
     "cost_range": "Purchase: $800-1,500; Monthly care: $100-250",
     "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Redbone-Coonhound.jpg"
   },
-  "Schipperke": {
+  "schipperke": {
     "size": "Small",
     "weight_range": "6.6-19.8 lbs (3-9 kg)",
     "height_range": "12-13.2 inches (31-33.6 cm)",
@@ -10179,7 +10177,7 @@ export const breedsData = {
     "cost_range": "Purchase: $900-1,800; Monthly care: $80-150",
     "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/98b0a32a-b00b-50db-8fed-f99fcafa23a8/cb932402-352e-5471-a4a6-863caf9c9557.jpg"
   },
-  "Silky Terrier": {
+  "silky-terrier": {
     "size": "Small",
     "weight_range": "8-10 lbs",
     "height_range": "9-10 inches",
@@ -10286,7 +10284,7 @@ export const breedsData = {
     "cost_range": "Purchase: $1,000-2,500; Monthly care: $100-250",
     "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/bac75b59-a328-5c7a-8fac-c1df8b47dcda/e91e73d4-022b-59db-9713-717a2a198855.jpg"
   },
-  "Soft Coated Wheaten Terrier": {
+  "soft-coated-wheaten-terrier": {
     "size": "Medium",
     "weight_range": "30-40 lbs",
     "height_range": "17-19 inches",
@@ -10399,7 +10397,7 @@ export const breedsData = {
     "cost_range": "Purchase: $1,200-2,500; Monthly care: $100-200",
     "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/edf2efb4-f2df-58d7-b1f2-7486af2de461/9442ca41-8237-5acb-ac1f-6e7b0e4a3787.jpg"
   },
-  "Standard Poodle": {
+  "standard-poodle": {
     "size": "Medium to Large",
     "weight_range": "40-70 lbs",
     "height_range": "15-24 inches",
@@ -10513,7 +10511,7 @@ export const breedsData = {
     "cost_range": "Purchase: $1,200-3,000; Monthly care: $150-300",
     "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/6133ec65-9a50-5a72-ae09-e9e301ab8810/19ee77a4-3d8a-5cdf-9e7c-c4c584196deb.jpg"
   },
-  "Standard Schnauzer": {
+  "standard-schnauzer": {
     "size": "Medium",
     "weight_range": "30-45 lbs",
     "height_range": "17.5-19.5 inches",
@@ -10622,7 +10620,7 @@ export const breedsData = {
     "cost_range": "Purchase: $800-1,800; Monthly care: $100-200",
     "img_url": "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/bb12446e-db98-5e82-b7b3-474fdc9f3504/dd7f1630-3ced-5752-a206-58dfeba60936.jpg"
   },
-  "Toy Poodle": {
+  "toy-poodle": {
     "size": "Small",
     "weight_range": "4-6 lbs",
     "height_range": "9-10 inches",
@@ -10743,7 +10741,7 @@ export const breedsData = {
     "cost_range": "Purchase: $1,200-2,500; Monthly care: $80-200",
     "img_url": " https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/3e5aad6a-ef87-509b-884c-6ff6d9788086/01108858-7bce-56fd-90b3-f7369c59e66f.jpg "
   },
-  "English Toy Terrier": {
+  "english-toy-terrier": {
     "size": "Small",
     "weight_range": "6-8 lbs (2.7–3.6 kg)",
     "height_range": "10–12 inches (25–30 cm)",
@@ -10846,7 +10844,7 @@ export const breedsData = {
     "cost_range": "Purchase: $1,200–2,000; Monthly care: $60–120",
     "img_url": " https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/9d17e517-754b-53f5-bcc1-e4b2fbd32de4/242529a2-ce9f-5620-ab4a-e20b93e8ae57.jpg "
   },
-  "Vizsla": {
+  "vizsla": {
     "size": "Medium",
     "weight_range": "45-65 lbs",
     "height_range": "21-24 inches",
@@ -10955,7 +10953,7 @@ export const breedsData = {
     "cost_range": "Purchase: $1,200-2,000; Monthly care: $100-250",
     "img_url": " https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/bbf80147-b941-51c6-9bb7-714faac6e5d7/dd7f1630-3ced-5752-a206-58dfeba60936.jpg "
   },
-  "Whippet": {
+  "whippet": {
     "size": "Medium",
     "weight_range": "18-48 lbs",
     "height_range": "18-22 inches",
@@ -11070,7 +11068,7 @@ export const breedsData = {
     "cost_range": "Purchase: $800-1,500; Monthly care: $70-150",
     "img_url": " https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/77d47585-a755-5307-9349-3764e00ca424/dd7f1630-3ced-5752-a206-58dfeba60936.jpg "
   },
-  "Wire Fox Terrier": {
+  "wire-fox-terrier": {
     "size": "Small",
     "weight_range": "15-19 lbs",
     "height_range": "13-15.5 inches",
@@ -11176,7 +11174,7 @@ export const breedsData = {
     "cost_range": "Purchase: $800-1,800; Monthly care: $80-150",
     "img_url": " https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/38d5e2c9-1050-5a86-bd47-83dc93581f8e/cb932402-352e-5471-a4a6-863caf9c9557.jpg "
   },
-  "Yorkshire Terrier": {
+  "yorkshire-terrier": {
     "size": "Toy",
     "weight_range": "4-7 lbs",
     "height_range": "7-8 inches",
@@ -11281,9 +11279,9 @@ export const breedsData = {
       "Can be difficult to house-train"
     ],
     "cost_range": "Purchase: $1500-$3000, Monthly: $100-$200",
-    "img_url": "URL_to_image_of_Yorkshire_Terrier.jpg"
+    "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFFTlLFhdzDeKZhsZBLbKqQo9x5Mbz_i-0Gw&s"
   },
-  "Affenpinscher": {
+  "affenpinscher": {
     "size": "Toy",
     "weight_range": "7-10 lbs",
     "height_range": "9-11.5 inches",
@@ -11389,9 +11387,9 @@ export const breedsData = {
       "Bold personality in a small body"
     ],
     "cost_range": "Purchase: $1800-$2500, Monthly: $100-$150",
-    "img_url": "URL_to_image_of_Affenpinscher.jpg"
+    "img_url": "https://dogtime.com/wp-content/uploads/sites/12/2024/10/GettyImages-1453381878-e1729886817778.jpg"
   },
-  "Basenji": {
+  "basenji": {
     "size": "Medium",
     "weight_range": "22-24 lbs",
     "height_range": "16-17 inches",
@@ -11494,9 +11492,9 @@ export const breedsData = {
       "Unique 'yodel' instead of a bark"
     ],
     "cost_range": "Purchase: $1200-$2000, Monthly: $100-$150",
-    "img_url": "URL_to_image_of_Basenji.jpg"
+    "img_url": "https://cdn.britannica.com/87/256987-050-39B532AF/Basenji-dog-.jpg"
   },
-  "Basset Hound": {
+  "basset-hound": {
     "size": "Medium",
     "weight_range": "40-65 lbs",
     "height_range": "Up to 15 inches",
@@ -11597,9 +11595,9 @@ export const breedsData = {
       "Can be very vocal with a loud, deep bay"
     ],
     "cost_range": "Purchase: $1000-$2000, Monthly: $150-$250",
-    "img_url": "URL_to_image_of_Basset_Hound.jpg"
+    "img_url": "https://th.bing.com/th/id/OIP.JfN4ZdaRQ12UoWZqYyCf5AHaGT?w=217&h=184&c=7&r=0&o=7&cb=12&dpr=1.4&pid=1.7&rm=3"
   },
-  "Black and Tan Coonhound": {
+  "black-and-tan-coonhound": {
     "size": "Large",
     "weight_range": "65-110 lbs",
     "height_range": "23-27 inches",
@@ -11704,9 +11702,9 @@ export const breedsData = {
       "Needs secure fencing as they will follow a scent"
     ],
     "cost_range": "Purchase: $600-$1200, Monthly: $150-$250",
-    "img_url": "URL_to_image_of_Black_and_Tan_Coonhound.jpg"
+    "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXvZEfppUaXHWAUf10q5b0hFWcgIDqi3XtMg&s"
   },
-  "Bloodhound": {
+  "bloodhound": {
     "size": "Large",
     "weight_range": "80-110 lbs",
     "height_range": "23-27 inches",
@@ -11810,9 +11808,9 @@ export const breedsData = {
       "Will follow a scent relentlessly; cannot be trusted off-leash"
     ],
     "cost_range": "Purchase: $1000-$1800, Monthly: $200-$300",
-    "img_url": "URL_to_image_of_Bloodhound.jpg"
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bloodhound_Erland22.jpg"
   },
-  "Bluetick Coonhound": {
+  "bluetick-coonhound": {
     "size": "Large",
     "weight_range": "45-80 lbs",
     "height_range": "21-27 inches",
@@ -11912,9 +11910,9 @@ export const breedsData = {
       "Cannot be trusted off-leash due to high prey drive"
     ],
     "cost_range": "Purchase: $500-$1000, Monthly: $150-$250",
-    "img_url": "URL_to_image_of_Bluetick_Coonhound.jpg"
+    "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu-c9KEvT9dSaO3ZnYjbp7ScBtVUUoSTp-uA&s"
   },
-  "Borzoi": {
+  "borzoi": {
     "size": "Giant",
     "weight_range": "60-105 lbs",
     "height_range": "26-32 inches",
@@ -12015,9 +12013,9 @@ export const breedsData = {
       "A quiet 'couch potato' indoors, but needs explosive exercise"
     ],
     "cost_range": "Purchase: $1500-$3000, Monthly: $200-$300",
-    "img_url": "URL_to_image_of_Borzoi.jpg"
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Chart_rosyjski_borzoj_rybnik-kamien_pl.jpg"
   },
-  "Briard": {
+  "briard": {
     "size": "Large",
     "weight_range": "55-100 lbs",
     "height_range": "22-27 inches",
@@ -12121,9 +12119,9 @@ export const breedsData = {
       "Can be suspicious of strangers and other animals"
     ],
     "cost_range": "Purchase: $1500-$2500, Monthly: $200-$300",
-    "img_url": "URL_to_image_of_Briard.jpg"
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Briard_fauve.JPG/1200px-Briard_fauve.JPG"
   },
-  "Bull Mastiff": {
+  "bull-mastiff": {
     "size": "Very Large / Giant",
     "weight_range": "100-130 lbs (45-59 kg)",
     "height_range": "24-27 in (61-69 cm)",
@@ -12224,9 +12222,9 @@ export const breedsData = {
     ],
     "adoption_considerations": "Size, drooling, health costs, training requirements",
     "cost_range": "High purchase + high monthly care",
-    "img_url": ""
+    "img_url": "https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=1200,height=675,fit=cover/animal/breed/dog/adult/670e7ad91686d346288636.jpg"
   },
-  "Cairn": {
+  "cairn": {
     "size": "Small to Medium",
     "weight_range": "13-18 lbs (6-8 kg)",
     "height_range": "9-10 in (23-25 cm)",
@@ -12329,9 +12327,9 @@ export const breedsData = {
     ],
     "adoption_considerations": "Prey drive, mental stimulation needs",
     "cost_range": "Moderate",
-    "img_url": ""
+    "img_url": "https://www.akc.org/wp-content/uploads/2017/11/Cairn-Terrier-sitting-in-the-grass.jpg"
   },
-  "Chow": {
+  "chow": {
     "size": "Medium to Large",
     "weight_range": "45-70 lbs (20-32 kg)",
     "height_range": "17-20 in (43-51 cm)",
@@ -12436,9 +12434,9 @@ export const breedsData = {
     ],
     "adoption_considerations": "Grooming, heat sensitivity, strong temperament",
     "cost_range": "Moderate to High",
-    "img_url": ""
+    "img_url": "https://tse1.mm.bing.net/th/id/OIP.BEHnqOtTusPVSEXPzF5bowHaHa?pid=Api&P=0&h=180"
   },
-  "Clumber Spaniel": {
+  "clumber-spaniel": {
     "size": "Large",
     "weight_range": "55-85 lbs (25-38 kg)",
     "height_range": "17-20 in (43-51 cm)",
@@ -12534,9 +12532,9 @@ export const breedsData = {
     ],
     "adoption_considerations": "Grooming, moderate exercise needs, ear care",
     "cost_range": "Moderate",
-    "img_url": ""
+    "img_url": "https://images.ctfassets.net/scac5p2hkp4h/2DdV29vEH2ba0DtdPjEEuD/a3ae8644f227557f3b40373779a54d56/ClumberSpaniel-FF.jpg"
   },
-  "Cocker Spaniel": {
+  "cocker-spaniel": {
     "size": "Medium",
     "weight_range": "20-30 lbs (9-14 kg)",
     "height_range": "13-16 in (33-41 cm)",
@@ -12641,9 +12639,9 @@ export const breedsData = {
     ],
     "adoption_considerations": "Grooming, ear care, active lifestyle",
     "cost_range": "Moderate",
-    "img_url": ""
+    "img_url": "https://tse3.mm.bing.net/th/id/OIP.N3SsKYz6_HoZVmQP9ss9wAHaEA?pid=Api&P=0&h=180"
   },
-  "Collie": {
+  "collie": {
     "size": "Medium to Large",
     "weight_range": "50-75 lbs (22-34 kg)",
     "height_range": "22-26 in (56-66 cm)",
@@ -12745,9 +12743,9 @@ export const breedsData = {
     ],
     "adoption_considerations": "Grooming, health testing, mental & physical activity",
     "cost_range": "Moderate",
-    "img_url": ""
+    "img_url": "https://wallpapercrafter.com/desktop/23674-border-collie-dog-lies-spotted-4k.jpg"
   },
-  "Curly-Coated Retriever": {
+  "curly-coated-retriever": {
     "size": "Large",
     "weight_range": "60-95 lbs (27-43 kg)",
     "height_range": "23-27 in (58-69 cm)",
@@ -12848,9 +12846,9 @@ export const breedsData = {
     ],
     "adoption_considerations": "Exercise and swimming access, health monitoring",
     "cost_range": "Moderate to High",
-    "img_url": ""
+    "img_url": "https://tse2.mm.bing.net/th/id/OIP.1Wgz6fmH9QuRJDDiHBKr_wHaE8?pid=Api&P=0&h=180"
   },
-  "Dhole": {
+  "dhole": {
     "size": "Medium to Large (wild canid, not domestic breed)",
     "weight_range": "25-44 lbs (11-20 kg)",
     "height_range": "18-26 in (46-66 cm)",
@@ -12949,9 +12947,9 @@ export const breedsData = {
     ],
     "adoption_considerations": "Not domesticated, unsuitable as pet",
     "cost_range": "Not applicable",
-    "img_url": ""
+    "img_url": "https://tse4.mm.bing.net/th/id/OIP.T6tM2_5a4HIL1mnjQtRJVAHaE2?pid=Api&P=0&h=180"
   },
-  "Dingo": {
+  "dingo": {
     "size": "Medium",
     "weight_range": "29-44 lbs (13-20 kg)",
     "height_range": "19-24 in (48-61 cm)",
@@ -13049,9 +13047,9 @@ export const breedsData = {
     ],
     "adoption_considerations": "Wild nature, legal constraints, unsuitable as house pet",
     "cost_range": "Not applicable",
-    "img_url": ""
+    "img_url": "https://tse2.mm.bing.net/th/id/OIP.QWB-CMEfMz6HiDrCd5ey0wHaE8?pid=Api&P=0&h=180"
   },
-  "Flat-Coated Retriever": {
+  "flat-coated-retriever": {
     "size": "Large",
     "weight_range": "60-80 lbs (27-36 kg)",
     "height_range": "22-24.5 in (56-62 cm)",
@@ -13149,9 +13147,9 @@ export const breedsData = {
     ],
     "adoption_considerations": "Exercise needs, cancer risk, social needs",
     "cost_range": "Moderate to High",
-    "img_url": ""
+    "img_url": "https://www.101dogbreeds.com/wp-content/uploads/2018/08/Flat-Coated-Retrievers.jpg"
   },
-  "Giant Schnauzer": {
+  "giant-schnauzer": {
     "size": "Large to Giant",
     "weight_range": "60-100 lbs (27-45 kg)",
     "height_range": "23.5-27.5 in (60-70 cm)",
@@ -13252,9 +13250,9 @@ export const breedsData = {
     ],
     "adoption_considerations": "Training demands, exercise, health testing",
     "cost_range": "Moderate to High",
-    "img_url": ""
+    "img_url": "https://www.k9rl.com/wp-content/uploads/2016/07/Giant-Schnauzer-dog-breed.jpg"
   },
-  "Groenendael": {
+  "groenendael": {
     "size": "Medium to Large",
     "weight_range": "55-75 lbs (25-34 kg) approx",
     "height_range": "24-26 in (60-66 cm) for males, 22-24 in for females",
@@ -13353,10 +13351,7 @@ export const breedsData = {
     ],
     "adoption_considerations": "High energy & mental needs, grooming, training",
     "cost_range": "Moderate to High",
-    "img_url": ""
+    "img_url": "https://tse2.mm.bing.net/th/id/OIP.j2RRWcgZxBkvnYn3QXmUmQHaE8?pid=Api&P=0&h=180"
   }
-
-
-};
-
+}
 export default breedsData;

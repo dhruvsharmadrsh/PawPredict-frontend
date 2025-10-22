@@ -1,10 +1,9 @@
-// src/utils/api.js
+
 import { useAuth } from '@clerk/clerk-react';
 
-// Use Create React App environment variable (not Vite!)
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 
-// Custom hook for authenticated API calls
+
 export const useAPI = () => {
   const { getToken } = useAuth();
 
@@ -16,7 +15,7 @@ export const useAPI = () => {
         ...options.headers,
       };
 
-      // Add auth token if available
+
       if (token) {
         headers['Authorization'] = `Bearer ${token}`;
       }

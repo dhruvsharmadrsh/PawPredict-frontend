@@ -95,7 +95,7 @@ const Footer = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-bold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
-                  PawPredict
+                   Pawdentify
                 </span>
                 <span className="text-xs font-semibold tracking-widest opacity-70">
                   Mind in Motion
@@ -231,7 +231,7 @@ const Footer = () => {
         } flex flex-col md:flex-row items-center justify-between gap-4 text-sm`}>
           <div className="flex items-center gap-2 opacity-80">
             <span className="font-bold">©</span>
-            <span>{new Date().getFullYear()} PawPredict. All rights reserved.</span>
+            <span>{new Date().getFullYear()}  Pawdentify. All rights reserved.</span>
           </div>
           
           <div className="flex items-center gap-4">
